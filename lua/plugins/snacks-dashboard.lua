@@ -9,8 +9,8 @@ return {
 				{
 					pane = 2,
 					section = "terminal",
-					cmd = "cmatrix -b -r",
-					height = 5,
+					cmd = "cmatrix -b -r -u 8",
+					height = 6,
 					padding = 1,
 				},
 				{ section = "keys", gap = 1, padding = 1 },
@@ -35,5 +35,5 @@ return {
 		},
 		terminal = { enabled = true },
 	},
-	-- { "nvimdev/dashboard-nvim", enabled = false },
+	--	{ "nvimdev/dashboard-nvim", enabled = false },
 }
