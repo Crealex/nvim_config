@@ -18,3 +18,5 @@ vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
+-- s'assurer que nvim voit le binaire cmatrix pour ubuntu
+vim.env.PATH = (os.getenv("HOME") .. "/.local/bin:") .. (vim.env.PATH or "")

@@ -1,2 +1,27 @@
-cmatrix (https://github.com/abishekvashok/cmatrix)
-wakatime for nvim
+- cmatrix (https://github.com/abishekvashok/cmatrix)
+
+- wakatime for nvim
+
+- .clang-format in home user folder:
+BasedOnStyle: LLVM
+
+BraceWrapping:
+  AfterFunction: true
+  AfterControlStatement: true
+  AfterClass: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterEnum: true
+  AfterUnion: true
+  AfterExternBlock: true
+
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 0  # 0 = pas de retour automatique
+
+AlignAfterOpenBracket: DontAlign
+BreakBeforeBraces: Custom
+
+
+- etc...
