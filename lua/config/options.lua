@@ -22,3 +22,9 @@ vim.opt.softtabstop = 4
 vim.env.PATH = (os.getenv("HOME") .. "/.local/bin:") .. (vim.env.PATH or "")
 -- Autosave
 vim.opt.autowriteall = true
+-- Afficher la colonne de ligne
+vim.opt.signcolumn = "yes"
+-- Garde l'historique de undo entre les fichiers et fermeture/ouverture
+vim.opt.undofile = true
+-- Surligne la ligne courante
+vim.opt.cursorline = true

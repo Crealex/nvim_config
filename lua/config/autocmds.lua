@@ -31,23 +31,6 @@ vim.api.nvim_create_autocmd({ "BufLeave", "WinLeave" }, {
 		vim.cmd("silent! update")
 	end,
 })
-vim.api.nvim_create_autocmd({ "BufLeave", "WinLeave" }, {
-	group = group,
-	callback = function(args)
-		local buf = args.buf
-		local bo = vim.bo[buf]
-		if bo.readonly or not bo.modifiable then
-			return
-		end
-		if bo.buftype ~= "" then
-			return
-		end -- ignore help, terminal, quickfix, etc.
-		if bo.filetype == "gitcommit" then
-			return
-		end
-		vim.cmd("silent! update")
-	end,
-})
 
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
