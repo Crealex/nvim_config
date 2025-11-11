@@ -1,0 +1,13 @@
+{
+	"name": "custom-snippets",
+	"version": "1.0.0",
+	"description": "Custom snippets for Neovim",
+	"contributes": {
+		"snippets": [
+			{
+				"language": ["c", "cpp"],
+				"path": "./colors.json"
+			}
+		]
+	}
+}
