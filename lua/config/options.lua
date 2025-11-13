@@ -28,3 +28,11 @@ vim.opt.signcolumn = "yes"
 vim.opt.undofile = true
 -- Surligne la ligne courante
 vim.opt.cursorline = true
+
+-- -----NEOVIDE-----
+
+if vim.g.neovide then
+	vim.g.neovide_opacity = 0.3
+	vim.g.neovide_background_color = "#0f1117" .. string.format("%x", math.floor(255 * 0.3)) --je sais pas trop a quoi sert cette ligne, apparment pour de l'opti
+	vim.g.neovide_scale_factor = 1.0
+end
