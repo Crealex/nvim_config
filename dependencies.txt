@@ -2,7 +2,8 @@
 
 - wakatime for nvim
 
-- .clang-format in home user folder:
+- .clang-format in home user folder: (disable atm)
+DisableFormat: true # disable autoformat
 BasedOnStyle: LLVM
 
 BraceWrapping:
