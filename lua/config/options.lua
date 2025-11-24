@@ -29,6 +29,9 @@ vim.opt.undofile = true
 -- Surligne la ligne courante
 vim.opt.cursorline = true
 
+-- Définit le terminal par default sur zsh
+vim.o.shell = "/bin/zsh"
+
 -- -----NEOVIDE-----
 
 if vim.g.neovide then
