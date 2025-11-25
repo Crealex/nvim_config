@@ -35,5 +35,5 @@ return {
 		},
 		terminal = { enabled = true },
 	},
-	--	{ "nvimdev/dashboard-nvim", enabled = false },
+	dependencies = { "nvimdev/dashboard-nvim", enabled = false },
 }
