@@ -3,6 +3,7 @@
 - wakatime for nvim
 
 - .clang-format in home user folder: (disable atm)
+--------------------------------------------------------
 DisableFormat: true # disable autoformat
 BasedOnStyle: LLVM
 
@@ -23,6 +24,9 @@ ColumnLimit: 0  # 0 = pas de retour automatique
 
 AlignAfterOpenBracket: DontAlign
 BreakBeforeBraces: Custom
+--------------------------------------------------------
+
+- fzf (for fzf-lua)
 
 
-- etc...
+- etc.
