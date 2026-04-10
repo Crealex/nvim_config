@@ -30,14 +30,14 @@ vim.opt.undofile = true
 vim.opt.cursorline = true
 
 -- Définit le terminal par default sur zsh
-vim.o.shell = "/bin/zsh"
+vim.o.shell = "/run/current-system/sw/bin/zsh"
 
 -- -----NEOVIDE-----
 
 if vim.g.neovide then
 	vim.g.neovide_opacity = 0.3
 	vim.g.neovide_background_color = "#0f1117" .. string.format("%x", math.floor(255 * 0.3)) --je sais pas trop a quoi sert cette ligne, apparment pour de l'opti
-	vim.g.neovide_scale_factor = 1.0
+	vim.g.neovide_scale_factor = 0.8
 	vim.g.neovide_cursor_vfx_mode = { "railgun", "ripple" }
 	vim.g.neovide_cursor_vfx_particle_density = 1
 end
